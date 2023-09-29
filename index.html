@@ -3,14 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Assets/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather Site</title>
   </head>
-
-  <body class="min-100-vh flex-column">
+  <body>
     <header>
-      <h1 class="p-5 text-center text-white bg-primary">Weather DashBoard</h1>
+      <h1 class="title">Weather DashBoard</h1>
     </header>
-    <script src="./Assets/script.js"></script>
+    <script src="./script.js"></script>
+    <div class="CitySearch">
+      <h1>Search for City:</h1>
+      <input type="searchbar" id="bar" /> <br />
+      <button type="button" id="Search">Search</button><br />
+      <ul></ul>
+      </div>
+    <div class="WeatherCard">
+        <div class="weather">
+          <h1 class="city"> los angeles (9/29/2023) </h1>
+          <div class="temp">Temp: 91 °F</div>
+          <div class="humidity">humidity: 97 %</div>
+          <div class="wind">Wind: 2mph </div>
+        </div>
+      </div>
+      <img id="city-card" src="" class="mt-3"></img>
+  </div>
   </body>
+  <script src="./script.js"></script>
 </html>
