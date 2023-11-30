@@ -5,8 +5,8 @@
 }
 
 :root {
-    --teal: rgb(0, 104, 108);
-    --lightteal: rgb(152, 216, 218);
+    --teal: rgb(108, 0, 0);
+    --lightteal: rgb(10, 0, 0);
 }
 
 main {
