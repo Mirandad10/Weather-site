@@ -3,30 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Weather Site</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/cloud-solid.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
   </head>
   <body>
     <header>
-      <h1 class="title">Weather DashBoard</h1>
+      <h1>Weather Dashboard</h1>
     </header>
-    <script src="./script.js"></script>
-    <div class="CitySearch">
-      <h1>Search for City:</h1>
-      <input type="searchbar" id="bar" /> <br />
-      <button type="button" id="Search">Search</button><br />
-      <ul></ul>
-      </div>
-    <div class="WeatherCard">
-        <div class="weather">
-          <h1 class="city"> los angeles (9/29/2023) </h1>
-          <div class="temp">Temp: 91 °F</div>
-          <div class="humidity">humidity: 97 %</div>
-          <div class="wind">Wind: 2mph </div>
+
+    <main>
+      <section id="search">
+        <form id="search-city">
+          <input
+            type="text"
+            id="search-input"
+            name="searchTerm"
+            placeholder="Search by City"
+          />
+          <input type="submit" id="search-submit" value="Search" />
+        </form>
+        <div id="recent-searches">
+          <ul></ul>
         </div>
-      </div>
-      <img id="city-card" src="" class="mt-3"></img>
-  </div>
+      </section>
+
+      <section id="weather">
+        <div id="current-weather"></div>
+        <h2 id="five-label" class="hidden">Five Day Forecast</h2>
+        <div id="five-day"></div>
+      </section>
+    </main>
+    <script src="./assets/script/script.js"></script>
   </body>
-  <script src="./script.js"></script>
 </html>
